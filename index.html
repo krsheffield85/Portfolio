@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI + Construction Portfolio</title>
+  <meta name="description" content="Portfolio showcasing AI, construction, and facilities management coursework, projects, and weekly article summaries." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">AI + Construction</a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="weekly-articles.html">Weekly Articles</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Course Portfolio</p>
+          <h1>AI + Construction & Facilities Management</h1>
+          <p class="lead">
+            A working portfolio site built to document weekly AI article summaries, major course projects,
+            and supporting coursework. Updated throughout the semester.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="projects.html">View Projects</a>
+            <a class="btn btn-ghost" href="weekly-articles.html">Read Weekly Articles</a>
+          </div>
+
+          <div class="pill-row" aria-label="Highlights">
+            <span class="pill">Live Site</span>
+            <span class="pill">GitHub Pages</span>
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">AI-assisted workflow</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">What’s inside</h2>
+          <ul class="clean-list">
+            <li><strong>Weekly Articles:</strong> brief, scannable summaries with takeaways</li>
+            <li><strong>Projects:</strong> problem, approach, tools, outcomes, screenshots</li>
+            <li><strong>About:</strong> professional background + contact info</li>
+          </ul>
+          <div class="card-foot">
+            <p class="muted small">Tip: Keep the site simple. Consistent structure beats fancy design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Quick links</h2>
+          <p class="muted">Jump straight to what graders typically care about.</p>
+        </div>
+
+        <div class="grid-3">
+          <a class="tile" href="weekly-articles.html">
+            <h3>Weekly Articles</h3>
+            <p>Summaries and takeaways, updated week by week.</p>
+            <span class="tile-link">Open →</span>
+          </a>
+          <a class="tile" href="projects.html">
+            <h3>Projects</h3>
+            <p>Course assignments with tools used and results.</p>
+            <span class="tile-link">Open →</span>
+          </a>
+          <a class="tile" href="about.html">
+            <h3>About</h3>
+            <p>Background, interests, and contact information.</p>
+            <span class="tile-link">Open →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>How this site was built</h2>
+          <p class="muted">Short version of the workflow you’ll document in your submission.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h3>Plan</h3>
+              <p>Defined pages, sitemap, and layout expectations.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h3>Design</h3>
+              <p>Picked a color palette and set consistent typography.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h3>Build + Publish</h3>
+              <p>Generated HTML/CSS, tested, then hosted on GitHub Pages.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="small muted">
+          You can expand this later with screenshots, a book review page, or individual article pages.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p class="small muted">© <span id="y"></span> Your Name. Built for coursework.</p>
+      <p class="small muted">
+        <a href="about.html">Contact</a> · <a href="projects.html">Projects</a> · <a href="weekly-articles.html">Weekly Articles</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
