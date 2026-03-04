@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Articles | AI + Construction Portfolio</title>
+  <meta name="description" content="Weekly AI article summaries and key takeaways for construction and facilities management." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html">AI + Construction</a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="weekly-articles.html">Weekly Articles</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="page-head">
+        <h1>Weekly Article Summaries</h1>
+        <p class="muted">
+          Each entry includes a short summary and key takeaways. Add one section per week.
+        </p>
+      </div>
+
+      <div class="filter card">
+        <div class="filter-row">
+          <label for="search" class="small muted">Search</label>
+          <input id="search" type="text" placeholder="Type to filter by title or keywords..." />
+        </div>
+        <p class="small muted">This is a simple local filter, no tracking, no analytics.</p>
+      </div>
+
+      <section class="articles" id="articles">
+
+        <article class="article card" data-keywords="agents ai construction facilities automation">
+          <div class="article-top">
+            <h2 class="card-title">Week 10: AI Agents</h2>
+            <span class="tag">Theme</span>
+          </div>
+          <p class="muted small">Source: Add your article title and publication.</p>
+
+          <h3>Summary</h3>
+          <p>
+            Replace this with your actual week summary. Keep it scannable and focused on what changed, why it matters,
+            and where it applies in construction or facilities management.
+          </p>
+
+          <h3>Key takeaways</h3>
+          <ul class="clean-list">
+            <li>Takeaway 1: What the tech does in plain English</li>
+            <li>Takeaway 2: Practical impact on workflow, schedule, or cost</li>
+            <li>Takeaway 3: Risks, limitations, or failure modes</li>
+          </ul>
+        </article>
+
+        <article class="article card" data-keywords="societal impact ai ethics risk safety">
+          <div class="article-top">
+            <h2 class="card-title">Week 11: Societal AI Impact</h2>
+            <span class="tag">Theme</span>
+          </div>
+          <p class="muted small">Source: Add your article title and publication.</p>
+
+          <h3>Summary</h3>
+          <p>
+            Replace this with your actual week summary. Tie it back to construction and facilities when possible,
+            especially around safety, labor shifts, procurement, compliance, or decision accountability.
+          </p>
+
+          <h3>Key takeaways</h3>
+          <ul class="clean-list">
+            <li>Takeaway 1: Who benefits, who gets hurt, and why</li>
+            <li>Takeaway 2: What changes in professional responsibility</li>
+            <li>Takeaway 3: What you would do differently as a practitioner</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <p class="small muted">
+        Add new weeks by copying an article card and updating the title, keywords, summary, and takeaways.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p class="small muted">© <span id="y"></span> Your Name.</p>
+      <p class="small muted">
+        <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="projects.html">Projects</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    const input = document.getElementById("search");
+    const cards = Array.from(document.querySelectorAll(".article"));
+
+    input.addEventListener("input", () => {
+      const q = input.value.trim().toLowerCase();
+      cards.forEach(card => {
+        const text = (card.innerText + " " + (card.dataset.keywords || "")).toLowerCase();
+        card.style.display = text.includes(q) ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
